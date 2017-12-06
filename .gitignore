@@ -2,8 +2,12 @@
 
 # compiled output
 /dist
+/functions/dist-server
 /tmp
 /out-tsc
+
+# compiled index
+/functions/index.js
 
 # dependencies
 node_modules
