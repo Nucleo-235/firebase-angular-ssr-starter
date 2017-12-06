@@ -10,8 +10,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:ssr": "ng build --prod --app 0 --output-hashing=false && ng build --prod --app 1 --output-hashing=false && mv dist/index.html functions/dist-server/index.html",
+    "tsc:functions": "tsc -p server/tsconfig.functions.json",
     "serve:firebase": "firebase serve --only functions,hosting",
-    "build_serve:firebase": "npm run build:ssr && npm run serve:firebase",
+    "build_serve:firebase": "npm run build:ssr && npm run tsc:functions && npm run serve:firebase",
     "deploy:firebase": "firebase deploy --only functions,hosting"
   },
   "private": true,
