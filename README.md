@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## DEV Firebase server
 
-Run `npm run-script firebase-serve` to build with ssr.
+Run `npm run serve:firebase` to build with ssr.
 
 ## Code scaffolding
 
@@ -20,7 +20,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Build SSR
 
-Run `npm run-script ssr-build` to build with ssr.
+Run `npm run build:ssr` to build with ssr.
 
 ## Running unit tests
 
